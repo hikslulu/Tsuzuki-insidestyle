@@ -126,7 +126,7 @@ img {
 	padding: 0 5rem;
 }
 
-/* HEADER */
+/* header */
 .header {
 	padding: 2rem 0;
 	background-color: var(--clr-semilight);
@@ -160,7 +160,7 @@ img {
 .header .toggle_menu {
 	display: none;
 }
-/* HEADER MOBILE */
+/* header MOBILE */
 @media screen and (max-width: 520px) {
 	.header .toggle_menu {
 		display: flex;
@@ -449,11 +449,12 @@ img {
 	}
 	.LatestStyleSection__wrapper {
 		grid-template-columns: 1fr;
-		gap: 1rem;
-	}
+	    gap: 1rem;
+
+    }
+
+
 }
-
-
 /* FOOTER */
 .footer {
 	background-color: var(--clr-dark);
@@ -479,32 +480,28 @@ img {
 		justify-content: center;
 		align-items: center;
 	}
-} 
- /* CATALOG PAGE BANNER */
-.catalogBanner_bg{
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-      ),
-      url(./img/catalog-banner.png);
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* to center the text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  .catalogBanner h1{
-    font-size: 7rem;
-    font-weight: 700;
-    color: var(--clr-primary);
-  }
-  .catalogBanner p{
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
+}
+/* CATALOG PAGE BANNER */
+.catalogBanner_bg {
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./img/catalog-banner.png);
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* to center the text */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.catalogBanner h1 {
+	font-size: 7rem;
+	font-weight: 700;
+	color: var(--clr-primary);
+}
+.catalogBanner p {
+	font-size: 3rem;
+	line-height: 2.5rem;
+}
 /* ABOUT PAGE BANNER */
 .aboutBanner {
 	padding: 3rem 0;
@@ -563,15 +560,77 @@ img {
 		font-size: 1.5rem;
 	}
 }
-/* INTERIOR PACKAGE BANNER */ 
-.packageBanner{ 
-    font-size: ;
-    font-weight: 700; 
-    color: var(--clr-primary); 
+/* INTERIOR PACKAGE BANNER */
+.package h2 {
+    color: var(--clr-primary);
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .package__theme {
+    padding: 5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .package__left {
+    width: 500rem;
+    margin-left: 10rem;
+    justify-content: center;
+  }
+  
+  .package__right h2 {
+    color: var(--clr-primary);
+    display: flex;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
     
+    
+  }
+  .package__right p {
+    font-size: 2rem;
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 19rem;
+  }
+  .package__theme:nth-child(odd){
+    background-color: var(--clr-semilight);
+    flex-direction: row-reverse;
+}
+/* UPDATES SECTION  */
+.updatesBanner {
+	padding: 3rem;
+	font-size: 2rem;
+}
+.updatesBanner h5 {
+	color: var(--clr-primary);
+	font-size: 10rem;
+	font-weight: 700;
+}
+.updatesBanner h1::before {
+	position: relative;
+	content: ' ';
+	background-color: var(--clr-primary);
+	height: 4rem;
+	width: 150rem;
+	bottom: 1rem;
+	right: 1rem;
+}
+.updatesBanner__wrapper {
+	justify-content: space-between;
+	gap: 5rem;
+	align-items: center;
+}
+.updatesBanner__right {
+	max-width: 100rem;
+}
+.updatesBanner__right p {
+	color: var(--clr-light);
+	margin-bottom: 2rem;
 
 }
-
 
 /* COMPONENTS */
 .btn {
@@ -596,4 +655,5 @@ img {
 }
 .btn--nobg:hover {
 	color: var(--clr-primary);
+
 }
